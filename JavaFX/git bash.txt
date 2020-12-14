@@ -1,0 +1,44 @@
+cd
+ls Desktop/
+cd Desktop/
+ls
+cd JavaFX
+pwd
+ls
+cd
+pwd
+cd ..
+pwd
+cd ..
+pwd
+ls
+cd pleiades
+pwd
+ls
+cd java
+pwd
+ls
+cd 8
+pwd
+ls
+cd bin
+pwd
+ls
+ /c/pleiades/java/8/bin/javac.exe
+touch .bash_profile
+ls .bash*
+ls
+ls -a
+alias javac=' /c/pleiades/java/8/bin/javac'
+alias java=' /c/pleiades/java/8/bin/java'
+alias javac=' /c/pleiades/java/8/bin/javac.exe'
+alias java=' /c/pleiades/java/8/bin/java.exe'
+source .bash_profile
+javac -version
+java -version
+cd
+cd Desktop/
+cd JavaFX
+ls
+javac MethodTest -encoding utf8
+java MethodTest
