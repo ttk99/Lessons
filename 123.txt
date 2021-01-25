@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+ <head>
+ <title>はじめてのwebベージ</title>
+ <meta charset="utf-8">
+</head>
+<body>
+ <h1>やったー! </h1>
+ <h2>やったー! </h2>
+ <h3>やったー! </h3>
+ <h4>やったー! </h4>
+ <h5>やったー! </h5>
+ <h6>やったー! </h6>
+ 書いてみました。
+</body>
+</html>
