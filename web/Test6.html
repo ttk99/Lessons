@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEST6</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>TEST</h1>
+  <img src="gazo/java.jpg" width="300" height="300">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      const gazofiles = [
+      'gazp/java.jpg',
+      'gazo/python.jpg',      
+      ]
+      let num = 0;
+      $("gazo").on("click",function(){
+        num++
+        if ( num >= gazofiles.length){
+          num = 0;
+        }
+        $("gazo").attr("src",gazofiles[num]);
+        
+      }) 
+    })
+  </script>
+</body>
+</html>
