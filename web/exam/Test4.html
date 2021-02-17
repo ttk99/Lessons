@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+   <html>
+   <head>
+   	<title>TEST4</title>
+   	<meta charset="utf-8">
+      <style>
+         .lagre{
+            width:600px;
+         }
+         
+      </style>
+      
+   </head>
+   <body>
+   	<h1>TEST</h1>	
+   	<img src="gazo/java.jpg" wdith=300>
+   	<h2>HyperText Markup Language</h2>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $(function(){
+            $("img").on("click",function(){
+               $(this).addClass("lagre")
+            })
+            $("h2").on("click",function(){
+               $(this).hide("lagre")
+            })
+         })
+      </script>
+   </body>
+   </html>

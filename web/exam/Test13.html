@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST13</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>TEST</h1>
+ 
+    <hr>
+    <img src="gazo/java.jpg" width="300">
+    <h2>0</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        const turn=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20",];
+        let num=0;
+      $("gazo").on("click",function(){
+        num++
+      if(num>=turn.length){
+        $("gazo").hide("img");
+      }
+      $("h2").text(turn[num]);
+
+      });
+    })
+  </script>
+</body>
+</html>

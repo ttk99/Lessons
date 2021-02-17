@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST10</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>TEST</h1>
+
+    <hr>
+    
+    <h2>Moutain</h2>
+    <img src="gazo/java.jpg" whidth="300">
+    <br>
+    <button id="1">前の画像</button>
+    <button id="2">次の画像</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        const gazofiles = [
+         'gazo/java.jpg',
+         'gazo/python.jpg',
+         'gazo/bongda.jpg',
+         'gazo/html.png',  
+        ]
+        const gazo1 = [
+         'HELLO',
+         'HALLO',
+         'HI',
+         'HE',
+        ]
+        let num = 0
+
+        $("gazo").on("click", function(){
+          num++
+           if ( num >= gazofiles.length ) {
+            num = 0
+          }
+          $("gazo").attr("src", gazofiles[ num ]);
+          $("h2").text(gazo1[num]);
+           })
+       $("#1").on("click", function(){
+          num++
+           if ( num >= gazofiles.length ) {
+            num = 0
+          }
+          $("gazo").attr("src", gazofiles[ num ]);
+          $("h2").text(gazo1[num]);
+        })
+       $("#2").on("click", function(){
+          num--
+           if ( num >= gazofiles.length ) {
+            num = 0
+          }
+          $("gazo").attr("src", gazofiles[ num ]);
+          $("h2").text(gazo1[num]);
+        })
+      })
+    </script>
+  </body>
+  </html>

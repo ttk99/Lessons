@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>TEST</h1>
+	<ul>
+		<li id="buri">ぶり</li>
+		<li id="hamachi">はまち</li>
+		<li id="tai">たい</li>
+		<li id="maguro">まぐろ</li>
+		<li id="kodama">こはだ</li>
+	</ul>
+	<table>
+		<tr>
+			<td>ぶり	</td>
+			<td>鰤</td>
+		</tr>
+		<tr>
+			<td>はまち	</td>
+			<td>魬</td>
+		</tr>
+		<tr>
+			<td>たい	</td>
+			<td>鯛</td>
+		</tr>
+		<tr>
+			<td>まぐろ	</td>
+			<td>鮪</td>
+		</tr>
+		<tr>
+			<td>こはだ	</td>
+			<td>小鰭</td>
+		</tr>
+	</table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("li").on("click",function(){
+				$(this).css("font-size","30pt")
+			})
+			$("li").on("click",function(){
+				$(this).css("color","PINK")
+			})
+			$("td").on("click",function(){
+				$(this).css("color","BLUE")
+			})
+
+		})
+	</script>
+</body>
+</html>
